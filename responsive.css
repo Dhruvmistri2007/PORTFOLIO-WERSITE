@@ -1,0 +1,185 @@
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* Large Tablets */
+
+@media (max-width: 992px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin: 10px 15px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-left,
+    .hero-right{
+        width: 100%;
+    }
+
+    .hero-right{
+        margin-bottom: 40px;
+    }
+
+    .hero-right img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+    .highlights{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    nav ul li{
+        margin:12px 0;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:50px 25px;
+    }
+
+    .hero-left h1{
+        font-size:24px;
+    }
+
+    .hero-left h2{
+        font-size:42px;
+    }
+
+    .hero-left h3{
+        font-size:22px;
+    }
+
+    .hero-left p{
+        font-size:16px;
+    }
+
+    .hero-right img{
+        width:250px;
+        height:250px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .btn,
+    .btn2{
+        width:220px;
+        text-align:center;
+    }
+
+    .highlights{
+        grid-template-columns:1fr;
+        padding:60px 25px;
+    }
+
+    .featured{
+        padding:60px 25px;
+    }
+
+    .featured h2{
+        font-size:32px;
+    }
+
+    .card{
+        padding:30px;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+}
+
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+    nav{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .hero-left h2{
+        font-size:34px;
+    }
+
+    .hero-left h3{
+        font-size:20px;
+    }
+
+    .hero-right img{
+        width:200px;
+        height:200px;
+    }
+
+    .featured h2{
+        font-size:28px;
+    }
+
+    .card i{
+        font-size:36px;
+    }
+
+    .card h3{
+        font-size:28px;
+    }
+
+    footer{
+        padding:30px 15px;
+    }
+
+    .social a{
+        font-size:24px;
+        margin:0 10px;
+    }
+
+}
